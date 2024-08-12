@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FONTS</title>
+
+    <style>
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sel {
+        background-color: aqua;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 19px 0px aqua;
+        font-size: larger;
+      }
+
+      .arial1 {
+        font-family: arial;
+      }
+      .Serif {
+        font-family: Serif;
+      }
+
+      .Fantasy {
+        font-family: Fantasy;
+      }
+
+      .Lucida-Sans {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .Lucida-Handwriting {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .Cambria {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .Monospace {
+        font-family: Monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: rgb(28, 84, 84)">Choose your font style</h1>
+    <p>This is default font</p>
+    <p class="" id="para">
+      This is an example of how the font-style looks like
+    </p>
+
+    <select name="" id="se" class="sel">
+      <option value="arial1">arial</option>
+      <option value="Serif">Times New Roman</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Lucida-Sans">Lucida Sans</option>
+      <option value="Lucida-Handwriting">Lucida Handwriting</option>
+      <option value="Cambria">Cambria</option>
+      <option value="Monospace">Monospace</option>
+    </select>
+  </body>
+
+  <script>
+    var select = document.getElementById("se");
+    var paragraph = document.getElementsByClassName("para");
+    select.addEventListener("change", function () {
+      para.className = select.value;
+    });
+    console.log(select);
+  </script>
+</html>
